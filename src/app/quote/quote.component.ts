@@ -12,6 +12,21 @@ export class QuoteComponent implements OnInit {
     new Quote('Cynthia Joel','Sometimes Cows do Fly', 'Cynthia', new Date(2018,6,20) ),
     new Quote('Cynthia Joel','Sometimes Cows do Fly', 'Cynthia', new Date(2018,6,20) )
   ]
+  addNewQuote(quote){
+    let quoteLength = this.Quotes.length;
+    this.Quotes.push(quote)
+  }
+  
+
+  deleteQuote(isComplete,index){
+    if (isComplete){
+        let toDelete=confirm(`Are you sure you want to delete Quote?`)
+        
+        if(toDelete){
+            this.Quotes.splice(index,1)
+        }
+    }
+}
 
   constructor() { }
 
