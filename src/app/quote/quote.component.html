@@ -2,5 +2,21 @@
 <ul>
   <li *ngFor = 'let quote of Quotes'>{{quote.quote}}{{quote.timeDate|timeSince}}</li>
 </ul>
+<div class="row">
+    <div class="col-md-6">
+        <div class= "col-md-6">
+            <button (click) = 'quoteDelete(true)' class='btn btn-warning'> Delete Quote </button>
+        </div>
+        <br>
+        <div class="col-md-6">
+            <button (click) = 'addNewQuote(true)' class='btn btn-warning'> Add Quote </button>
+        </div>
+    </div>
+    <div class="col-md-6">
+      
+      </div>
+  
+  </div>
+
 
 
