@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes';
+  title = 'Quotes'; 
+
+onSubmit  (f: NgForm){
+  let content =f.value.content;
+  let title = f.value.title;
+  title.push({
+    'title':title,
+    'content': content
+  })
+
 }
- 
+} 
