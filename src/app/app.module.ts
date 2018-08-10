@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { TimeSincePipe } from './time-since.pipe';
 import { InputComponent } from './input/input.component';
+import { UserInputComponent } from './user-input/user-input.component';
+import { AvatarComponent } from './avatar/avatar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     TimeSincePipe,
-    InputComponent
+    InputComponent,
+    UserInputComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule

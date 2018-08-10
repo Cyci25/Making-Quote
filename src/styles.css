@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.jumbotron{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    /* background-image:url ("../assets/Background.jpg"); */
+    background-image: url('assets/Background.jpg');
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+
+}
+.example{
+    background:rgba(249, 245, 4, .1);
+
+}
