@@ -8,7 +8,8 @@ import { TimeSincePipe } from './time-since.pipe';
 
 import { UserInputComponent } from './user-input/user-input.component';
 import { AvatarComponent } from './avatar/avatar.component';
-import { InputDetailsComponent } from './input-details/input-details.component';
+import { PostComponent } from './post/post.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InputDetailsComponent } from './input-details/input-details.component';
 
     UserInputComponent,
     AvatarComponent,
-    InputDetailsComponent
+    PostComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,36 +1,28 @@
 
 <div class="container-fluid">
     <div class="row">
-        <form>
+        <div class="card" style="width: 200%;"> 
+            <h4 class="card-title"> Create Quote</h4>
             <div class="form-group">
 
                 <label for="name">Name</label>
-                <input style="width: 200%;" type="text" required class="form-control" id="name" name="name" [(ngModel)]="author.name">
+                <input style="width: 100%;" type="text" required class="form-control" id="name">
 
             </div>
-             <div class="form-group">
 
-                <label for="description">Description</label>
-                <textarea style="width: 200%;" class="form-control" id="description" name="quote" [(ngModel)]="quote.description" rows="4" required></textarea>
-                
-            </div>
-
-            <!-- <! -- <div class="form-group">
-                <label for="complete">Completion</label>
-                <input style="width: 200%;" type='date' id="complete" required>
-                
-            </div> --> 
             <div class="form-group">
 
-                    <label for="Submitted">Submitted by:</label>
-                    <input style="width: 200%;" type="text" required class="form-control" name="Submitted" [(ngModel)]="quote.Submiter" id="Submitted" >
-    
-                </div>
-                <button type="submit" class='btn btn-warning'>Submit</button>
+                <label for="description">Description</label>
+                <textarea style="width: 100%;" class="form-control" id="description" rows="4" required></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label for="complete">Completion</label>
+                <input style="width: 100%;" type='date' id="complete" required>
+                
+            </div>
+            <button type="button" class="btn btn-warning">Submit</button>
+            </div>
 
-
-        </form>
     </div>
 </div>
-
-
