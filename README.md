@@ -1,7 +1,8 @@
 # Quotes
-11-Aug-2018
-By Cynthia Muriithi
-Description
+* 11-Aug-2018
+* By Cynthia Muriithi
+* Description
+
 This is an app that lets users post different quotes on the website.
 The user can delete posts, vote for the ones they like and the ones the don't.
 
