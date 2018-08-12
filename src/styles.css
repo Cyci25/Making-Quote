@@ -1,22 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
-.jumbotron2{
-    margin: 0px;
-    padding:0px;
-    text-align: center;
-    background-color: rgba(249, 245, 4, .7);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 75px; 
+.jumbotron2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: rgba(249, 245, 4, .7);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 75px;
 }
-#avatar{
-    margin: 10%;
+
+#avatar {
+  margin: 10%;
 }
-body{
-    background-image: url('assets/Background.jpg');
-    font-size: 20px;
-    color: black;
-    /* background-attachment: fixed; */
+
+body {
+  background-image: url('assets/Background.jpg');
+  font-size: 20px;
+  color: black;
+  /* background-attachment: fixed; */
 }
+
 /* .example{
     background:rgba(249, 245, 4, .7) ;
     background-attachment: fixed;

@@ -1,5 +1,5 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core';
-import {Quote} from '../quote'
+// import {Quote} from '../quote'
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -8,9 +8,7 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./user-input.component.css']
 })
 export class UserInputComponent implements OnInit {
-//   submitGoal(){
-//     this.addQuote.emit(this.newQuote);
-// }
+
 
   constructor() { }
 

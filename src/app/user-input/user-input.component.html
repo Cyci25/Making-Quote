@@ -1,28 +1,29 @@
 
+
 <div class="container-fluid">
-    <div class="row">
-        <div class="card" style="width: 200%;"> 
-            <h4 class="card-title"> Create Quote</h4>
-            <div class="form-group">
-
-                <label for="name">Name</label>
-                <input style="width: 100%;" type="text" required class="form-control" id="name">
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="description">Description</label>
-                <textarea style="width: 100%;" class="form-control" id="description" rows="4" required></textarea>
-                
-            </div>
-            <div class="form-group">
-                <label for="complete">Completion</label>
-                <input style="width: 100%;" type='date' id="complete" required>
-                
-            </div>
-            <button type="button" class="btn btn-warning">Submit</button>
-            </div>
-
+        <form #quoteForm="ngForm">
+        <div class="panel panel-primary">
+                <div class="panel-heading"> 
+                <h4 class="card-title"> Create Quote</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                            <label for="name">Name</label>
+                            <input style="width: 100%;" type="text" required class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                            <label for"description">Description</label>
+                            <textarea style="width: 100%;" class="form-control" id="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for="author">Author</label>
+                            <input style="width: 100%;" type="text" required class="form-control" id="author">
+                    </div>
+                </div>
+    
+                <div class="panel-footer">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </form>
     </div>
-</div>
+
+{{qouteForm.value | json}}
