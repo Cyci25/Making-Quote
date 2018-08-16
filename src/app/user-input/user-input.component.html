@@ -1,5 +1,5 @@
 <div class="container" id="style">
-  <div [hidden]="!submitted">
+  <div [hidden]="submitted">
 <!-- form -->
 <form (ngSubmit)="onSubmit()" #quoteForm="ngForm">
   <div class="form-group">
@@ -33,15 +33,16 @@
   </div>
 </div>
 <div class="form-group">
-    <label for="timeDate">Enter your name</label>
+    <label for="timeDate">Enter the Date</label>
     <input type="Date" class="form-control" id="timeDate"
     required
     [(ngModel)]="formQuote.timeDate" name="timeDate"
     #author="ngModel">
-    <div [hidden]="timeDate.vaild || timeDate.pristine"
-    class="alert alert-danger">Your full name is required!
-    </div>
+    <!-- <div [hidden]="timeDate.vaild || timeDate.pristine"
+    class="alert alert-danger">Date!
+    </div> -->
   </div>
+  
 <button type="submit" class="but btn-success">Submit</button>
 </form>
   </div>

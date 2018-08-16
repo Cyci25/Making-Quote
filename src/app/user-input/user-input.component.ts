@@ -14,7 +14,7 @@ export class UserInputComponent implements OnInit {
   quotes: Quote[];
   formQuote = new Quote(0,"", "", "", new Date() );
 
-  submitted = true;
+  submitted = false;
 
   onSubmit() {
     this.submitted = true;
