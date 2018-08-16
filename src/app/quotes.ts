@@ -2,9 +2,7 @@ import {Quote} from './quote';
 
 export let Quotes: Quote[] =
     [
-        new Quote('Cynthia Joel', 'Sometimes Cows do Fly', 'Cynthia', new Date(2018, 6, 20)),
-        new Quote('Cynthia Joel', 'Sometimes Cows do Fly', 'Cynthia', new Date(2018, 6, 20)),
-        new Quote('Cynthia Joel', 'Sometimes Cows do Fly', 'Cynthia', new Date(2018, 6, 20))
-    ]
-
-
+        new Quote('Joan Kagure', 'Dear Math, please grow up and solve your own problems.', 'Priscilla Kuria'),
+        new Quote('Cynthia Muriithi', 'I do not need a hair stylist, my pillow gives me a new hairstyle every morning.', 'Melisa Malala'),
+        new Quote('Kuria Muriithi', 'Everybody wants to go to heaven, but nobody wants to die.', 'Kamran Sumar')
+    ];

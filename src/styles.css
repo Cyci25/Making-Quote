@@ -21,6 +21,9 @@ body {
   /* background-attachment: fixed; */
 }
 
+#style{
+  color: White;
+}
 /* .example{
     background:rgba(249, 245, 4, .7) ;
     background-attachment: fixed;
