@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 import { QuoteServiceService } from '../quote-service.service';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -11,13 +12,21 @@ import { QuoteServiceService } from '../quote-service.service';
 })
 export class UserInputComponent implements OnInit {
   quotes: Quote[];
-  formQuote = new Quote("", "", "");
+  formQuote = new Quote(0,"", "", "", new Date() );
 
   submitted = true;
 
   onSubmit() {
     this.submitted = true;
     this.quotes.push(this.formQuote);
+}
+deleteQuote(isComplete, index){
+  if (isComplete){
+    const toDelete = confirm('Do you want to delete this Quote?');
+    if (toDelete) {
+      this.quotes.splice(index, 1);
+    }
+  }
 }
 
   constructor(quoteServiceService:QuoteServiceService) {

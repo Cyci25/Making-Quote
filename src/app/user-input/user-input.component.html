@@ -32,6 +32,16 @@
   class="alert alert-danger">Your full name is required!
   </div>
 </div>
+<div class="form-group">
+    <label for="timeDate">Enter your name</label>
+    <input type="Date" class="form-control" id="timeDate"
+    required
+    [(ngModel)]="formQuote.timeDate" name="timeDate"
+    #author="ngModel">
+    <div [hidden]="timeDate.vaild || timeDate.pristine"
+    class="alert alert-danger">Your full name is required!
+    </div>
+  </div>
 <button type="submit" class="but btn-success">Submit</button>
 </form>
   </div>
@@ -39,14 +49,17 @@
 <!-- Outout -->
 <div class="jumbotron" style="width: 100%;">
   <div [hidden]="submitted">
-   <ul *ngFor='let quote of quotes'>
+   <ul *ngFor='let quote of quotes; let i = index'>
      <li>
        <p><strong>Author: </strong>{{quote.author}}</p>
        <p><strong>Quote: </strong>{{quote.quote}}</p>
        <p><strong>Submiter: </strong>{{quote.submiter}}</p>
+       <p><strong>time: </strong>{{quote.timeDate|date}}</p>
+
        <div>
-       <button type="button" name="button">Delete</button>
+       <button type="button" name="button" (click)="deleteQuote(true, i)" class="btn btn-danger">Delete</button>
        </div>
+
        <app-likes></app-likes>
      </li>
    </ul>
