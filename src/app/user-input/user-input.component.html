@@ -28,7 +28,8 @@
   required
   [(ngModel)]="formQuote.submiter" name="submiter"
   #author="ngModel">
-  <div [hidden]="submiter.vaild || submiter.pristine"
+  <div [hidden]="submiter.vaild ||
+   submiter.pristine"
   class="alert alert-danger">Your full name is required!
   </div>
 </div>

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TimeSincePipe } from './time-since.pipe';
 import { UserInputComponent } from './user-input/user-input.component';
-import { AvatarComponent } from './avatar/avatar.component';
+
 import { QuoteServiceService } from './quote-service.service';
 import { LikesComponent } from './likes/likes.component';
 
@@ -14,7 +14,6 @@ import { LikesComponent } from './likes/likes.component';
     AppComponent,
     TimeSincePipe,
     UserInputComponent,
-    AvatarComponent,
     LikesComponent,
 
   ],
