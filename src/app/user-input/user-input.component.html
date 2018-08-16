@@ -8,45 +8,43 @@
     required
     [(ngModel)]="formQuote.author" name="author"
     #author="ngModel">
-    <div [hidden]="author.vaild || author.pristine"
+    <div [hidden]="author.valid || author.pristine"
     class="alert alert-danger">Author name required!
     </div>
   </div>
+
   <div class="form-group">
     <label for="quote">Write your quotes.</label>
     <textarea row="3" cols="80" type="text" class="form-control"
     id="quote" required [(ngModel)]="formQuote.quote"
     name="quote" #quote="ngModel"></textarea>
-  <div [hidden]="quote.vaild || quote.pristine"
+  <div [hidden]="quote.valid || quote.pristine"
   class="alert alert-danger">Quote is required!
   </div>
 </div>
 
 <div class="form-group">
   <label for="submiter">Enter your name</label>
-  <input type="text" class="form-control" id="submiter"
+  <input 
+  type="text" class="form-control" id="submiter"
   required
   [(ngModel)]="formQuote.submiter" name="submiter"
-  #author="ngModel">
-  <div [hidden]="submiter.vaild ||
-   submiter.pristine"
+  #submiter="ngModel">
+  <div [hidden]="submiter.valid ||submiter.pristine"
   class="alert alert-danger">Your full name is required!
   </div>
 </div>
+
 <div class="form-group">
     <label for="timeDate">Enter the Date</label>
     <input type="Date" class="form-control" id="timeDate"
     required
     [(ngModel)]="formQuote.timeDate" name="timeDate"
-    #author="ngModel">
-    <!-- <div [hidden]="timeDate.vaild || timeDate.pristine"
-    class="alert alert-danger">Date!
-    </div> -->
-  </div>
-  
+    #timeDate="ngModel">
+</div>  
 <button type="submit" class="but btn-success">Submit</button>
 </form>
-  </div>
+</div>
 </div>
 <!-- Outout -->
 <div class="jumbotron" style="width: 100%;">
