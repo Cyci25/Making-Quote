@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.jumbotron2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: rgba(249, 245, 4, .7);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 75px;
+}
+
+#avatar {
+  margin: 10%;
+  color: white;
+}
+
+body {
+  background-image: url('assets/Background.jpg');
+  font-size: 20px;
+  color: black;
+  /* background-attachment: fixed; */
+}
+
+#style{
+  color: White;
+}
+
+/* .example{
+    background:rgba(249, 245, 4, .7) ;
+    background-attachment: fixed;
+    margin: 0%;
+
+
+} */
