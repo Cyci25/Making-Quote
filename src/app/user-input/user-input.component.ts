@@ -12,24 +12,24 @@ import { DatePipe } from '@angular/common';
 })
 export class UserInputComponent implements OnInit {
   quotes: Quote[];
-  formQuote = new Quote(0,"", "", "", new Date() );
+  formQuote = new Quote(0, '', '', '', new Date());
 
   submitted = false;
 
   onSubmit() {
-    this.submitted = true;
+    this.submitted = false;
     this.quotes.push(this.formQuote);
-}
-deleteQuote(isComplete, index){
-  if (isComplete){
-    const toDelete = confirm('Do you want to delete this Quote?');
-    if (toDelete) {
-      this.quotes.splice(index, 1);
+  }
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      const toDelete = confirm('Do you want to delete this Quote?');
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
     }
   }
-}
 
-  constructor(quoteServiceService:QuoteServiceService) {
+  constructor(quoteServiceService: QuoteServiceService) {
     this.quotes = quoteServiceService.getAllQuotes();
   }
 
